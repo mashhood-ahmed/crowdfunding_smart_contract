@@ -50,7 +50,7 @@ contract Investor {
 
 
     // make sure investor is registerd
-    function investInIdea(string calldata _code, uint _amount, address _account) public is_investor {
+    function investInIdea(string calldata _code, uint8 _amount, address _account) public is_investor {
         address account = _account;
         contractOwnerObj.receiveIdeaDonations(_code, _amount, account);
     }
